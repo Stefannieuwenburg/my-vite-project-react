@@ -1,23 +1,29 @@
 import "bootstrap/dist/css/bootstrap.css";
+import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
+import logo from "./logo.svg";
 import "./App.css";
-import { Nav, Navbar } from 'react-bootstrap'
-import logo from "./logo.svg"
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Home from "./components/Home";
 
 function App() {
     return (
         <>
-            <Navbar bg="dark" variant="dark" fixed="top">
-                <Navbar.Brand>
-                    <img src={logo} width="40px" height="40px" />
-                    Logo Vite
-                </Navbar.Brand>
-                <Nav>
-                    <Nav.Link href="Product">Product</Nav.Link>
-                    <Nav.Link href="Contact">Contact</Nav.Link>
-                    <Nav.Link href="About">About</Nav.Link>
-                </Nav>
+            <Navbar bg="dark" variant="dark" expand="lg">
+                <Container>
+                    <Navbar.Brand>
+                        <img src={logo} width="40px" height="40px" />
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto">
+                            <Nav.Link href="Home">Home</Nav.Link>
+                            <Nav.Link href="About">About</Nav.Link>
+                            <Nav.Link href="Contact">Contact</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
             </Navbar>
-            <div className="content">this is content</div>
         </>
     );
 }
