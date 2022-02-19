@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Home from './Home'
+import NavbarComp from './NavbarComp'
 import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
-  <React.StrictMode><Home /></React.StrictMode>,document.getElementById('root'))
+  <React.StrictMode><NavbarComp /></React.StrictMode>,document.getElementById('root'))

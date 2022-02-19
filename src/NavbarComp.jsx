@@ -1,12 +1,13 @@
 import "bootstrap/dist/css/bootstrap.css";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import logo from "./logo.svg";
-import "./Home.css";
+import "./NavbarComp.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Home from "./components/Home"
 
 
-function Home() {
+function NavbarComp() {
     return (
         <>
             <Navbar bg="dark" variant="dark" expand="lg">
@@ -28,4 +29,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default NavbarComp;
