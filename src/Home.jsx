@@ -1,18 +1,18 @@
 import "bootstrap/dist/css/bootstrap.css";
-import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 import logo from "./logo.svg";
-import "./App.css";
+import "./Home.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Home from "./components/Home";
 
-function App() {
+
+function Home() {
     return (
         <>
             <Navbar bg="dark" variant="dark" expand="lg">
                 <Container>
                     <Navbar.Brand>
-                        <img src={logo} width="40px" height="40px" />
+                       Logo <img src={logo} width="40px" height="40px" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -28,4 +28,4 @@ function App() {
     );
 }
 
-export default App;
+export default Home;
