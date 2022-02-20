@@ -1,19 +1,17 @@
-import React from "react"
+import { React } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./NavbarComp.css";
 import { Nav, Navbar, Container } from "react-bootstrap";
-import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
-import  logo  from "./logo.svg";
-import  About  from "./components/About";
-import  Contact  from "./components/Contact";
-import  Home from "./components/Home"
-
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { logo } from "./logo.svg";
+import { About } from "./components/About";
+import { Contact } from "./components/Contact";
+import { Home } from "./components/Home";
 
 function NavbarComp() {
     return (
         <BrowserRouter>
             <div className="NavbarComp">
-                <>
                     <Navbar bg="dark" variant="dark" expand="lg">
                         <Container>
                             <Navbar.Brand>
@@ -36,7 +34,6 @@ function NavbarComp() {
                             </Navbar.Collapse>
                         </Container>
                     </Navbar>
-                </>
             </div>
             <Routes>
                 <Route path="/" element={<Home />} />
