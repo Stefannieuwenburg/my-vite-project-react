@@ -4,8 +4,8 @@ import "./NavbarComp.css";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import  logo  from "./logo.svg";
-import About  from "./components/About";
-import  Contact  from "./components/Contact";
+import  About from "./components/About";
+import  Contact from "./components/Contact";
 import  Home  from "./components/Home";
 
 function NavbarComp() {
